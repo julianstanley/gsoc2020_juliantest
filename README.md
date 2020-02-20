@@ -60,6 +60,25 @@ ggplot(my_changepoints) +
 
 ![](README_files/figure-gfm/easy_test-1.png)<!-- -->
 
+Hopefully, this plot helps you to see the general trend of the effect of
+the penalty on gfpop. At low penalty values, the algorithm is grossly
+overfit–for example, at a penalty of
+![2](https://latex.codecogs.com/png.latex?2 "2"), gfpop detects
+changepoints at dozens of points throughout the dataset.
+
+Around penalities
+![\[8,64\]](https://latex.codecogs.com/png.latex?%5B8%2C64%5D "[8,64]"),
+gfpop is relatively stable. This is good news, since the “rule of thumb”
+penalty of ![2log(n)](https://latex.codecogs.com/png.latex?2log%28n%29
+"2log(n)") for this dataset would be ![2log(1000)
+\\approx 13.81](https://latex.codecogs.com/png.latex?2log%281000%29%20%5Capprox%2013.81
+"2log(1000) \\approx 13.81"), right within this range.
+
+At a penalty above ![64](https://latex.codecogs.com/png.latex?64 "64"),
+gfpop begins to be underfit to the dataset. For example, at
+![512](https://latex.codecogs.com/png.latex?512 "512"), gfpop does not
+predict any changepoints.
+
 # Medium Test
 
 This test requires that I make a shiny app with an input that allows the
