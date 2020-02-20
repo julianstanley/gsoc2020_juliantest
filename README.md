@@ -91,7 +91,14 @@ This test requires that I make a shiny app with an input that allows the
 user to select the penalty parameter in that dataset, and shows a ggplot
 of the data and model with that penalty parameter.
 
-*todo*
+To run:
+
+``` r
+if(!require("shiny")) install.packages("shiny")
+shiny::runGitHub("gsoc2020_juliantest", "julianstanley", subdir = "app")
+```
+
+![](README_files/shiny_screenshot.png)<!-- -->
 
 # Hard Test
 
@@ -99,4 +106,6 @@ For this test, I will write a D3.js data visualization in which the user
 can hover over one displayed item and see it highlighted, along with
 other items.
 
-*todo*
+*Unfinished*
+
+I haven’t finished this test yet, but I will\! Check back later.
