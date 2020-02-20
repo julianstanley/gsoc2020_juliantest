@@ -7,6 +7,10 @@ February-March 2020
 [![Project](https://img.shields.io/badge/Project-Constrained%20Changepoint%20GUI-brightgreen)](https://github.com/rstats-gsoc/gsoc2020/wiki/Constrained-changepoint-GUI)
 [![GSOC](https://img.shields.io/badge/This%20is%20for-GSOC2020-red)](https://summerofcode.withgoogle.com/)
 
+For an example of prior Shiny-related work, see the “inst” folder within
+the “SensorOverlord” repo on my account, [found
+here](https://github.com/julianstanley/SensorOverlord/tree/master/inst/shinyApp).
+
 # Overview
 
 This repository and this accompanying README is a set of tests for
@@ -37,7 +41,7 @@ myData <- dataGenerator(n, c(0.1,0.3,0.5,0.8,1), c(1,2,1,3,1), sigma = 1)
 # A function for computing the location of changepoints at a given penalty parameter
 changepoint_locs <- function(penalty, data = myData) {
     myGraph <- graph(penalty = penalty, type = "updown")
-    model <- gfpop(data = myData, mygraph = myGraph, type = "mean")
+    model <- gfpop(data = data, mygraph = myGraph, type = "mean")
     num_changepoints <- length(model$changepoints)
     this_data <- data.frame(penalty = rep(penalty, num_changepoints), 
                             changepoint = model$changepoints,
