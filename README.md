@@ -11,6 +11,9 @@ For an example of prior Shiny-related work, see the “inst” folder within
 the “SensorOverlord” repo on my account, [found
 here](https://github.com/julianstanley/SensorOverlord/tree/master/inst/shinyApp).
 
+Please feel free to contact me at julianstanleya \[at\] gmail or
+stanley.ju \[at\] northeastern \[dot\] edu.
+
 # Overview
 
 This repository and this accompanying README is a set of tests for
@@ -110,6 +113,10 @@ When working in R, I will often use Plotly to render d3.js interactive
 plots (Plotly is built on top of d3.js, but specalized for plotting).
 It’s much easier for most plots, especially in R because of it’s
 integration with the ggplot2 library.
+
+Note to mentors: I am more than happy to re-create this plot in pure d3,
+if necessary. Please feel free to reach out to me and request that, if
+that can help to convince you that I’m serious about this project\! :)
 
 To make my visualization, I first merged the gfpop input data with the
 changepoint results: each point is within a certain “changepoint
