@@ -111,7 +111,7 @@ other items.
 
 When working in R, I will often use Plotly to render d3.js interactive
 plots (Plotly is built on top of d3.js, but specalized for plotting).
-It’s much easier for most plots, especially in R because of it’s
+It’s much easier for most plots, especially in R because of its
 integration with the ggplot2 library.
 
 Note to mentors: I am more than happy to re-create this plot in pure d3,
