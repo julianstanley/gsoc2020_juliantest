@@ -106,6 +106,25 @@ For this test, I will write a D3.js data visualization in which the user
 can hover over one displayed item and see it highlighted, along with
 other items.
 
-*Unfinished*
+When working in R, I will often use Plotly to render d3.js interactive
+plots (Plotly is built on top of d3.js, but specalized for plotting).
+It’s much easier for most plots, especially in R because of it’s
+integration with the ggplot2 library.
 
-I haven’t finished this test yet, but I will\! Check back later.
+To make my visualization, I first merged the gfpop input data with the
+changepoint results: each point is within a certain “changepoint
+region”, that might be interesting to endusers.
+
+When you hover over a given datapoint, the D3 visualization will give
+you the coordinates of that datapoint, as well as information about the
+changepoint region in which that datapoint falls.
+
+The visualization is included in the shiny app, which can be run just as
+before:
+
+``` r
+if(!require("shiny")) install.packages("shiny")
+shiny::runGitHub("gsoc2020_juliantest", "julianstanley", subdir = "app")
+```
+
+![](README_files/d3_gfpop.gif)
