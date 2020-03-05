@@ -3,9 +3,9 @@ Tests for GSOC 2020 - Constrained Changepoint GUI
 Julian Stanley
 February-March 2020
 
-[![Hello\!](https://img.shields.io/badge/Hello!-Im%20Julian-blue)](https://julianstanley.com)
-[![Project](https://img.shields.io/badge/Project-Constrained%20Changepoint%20GUI-brightgreen)](https://github.com/rstats-gsoc/gsoc2020/wiki/Constrained-changepoint-GUI)
-[![GSOC](https://img.shields.io/badge/This%20is%20for-GSOC2020-red)](https://summerofcode.withgoogle.com/)
+[![Hello\!](README_files/shield_hello.svg)](https://julianstanley.com)
+[![Project](README_files/shield_project.svg)](https://github.com/rstats-gsoc/gsoc2020/wiki/Constrained-changepoint-GUI)
+[![GSOC](README_files/shield_gsoc.svg)](https://summerofcode.withgoogle.com/)
 
 For an example of prior Shiny-related work, see the “inst” folder within
 the “SensorOverlord” repo on my account, [found
